@@ -1,0 +1,14 @@
+<infinispan>
+  <jgroups>
+     <stack-file name="external-file" path="jgroups.xml"/>
+  </jgroups>
+<cache-container name="comelit" default-cache="unique-operation-on-cluster">
+	<transport lock-timeout="60000"/>
+	<replicated-cache name="unique-operation-on-cluster" mode="SYNC"/>
+	<replicated-cache name="auth-token-on-cluster" mode="SYNC"/>
+	<replicated-cache name="json-web-cache" mode="SYNC">
+		<eviction strategy="FIFO" max-entries="4096"/>
+		<expiration interval="-1" lifespan="-1" max-idle="-1"/>
+	</replicated-cache>
+</cache-container>
+</infinispan>

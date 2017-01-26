@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+		<dependencies>
+			<module name="org.apache.httpcomponents"/>
+			<module name="org.apache.commons.beanutils" />
+			<module name="org.apache.commons.io" />
+            <module name="org.infinispan" services="export"/>
+            <module name="org.infinispan.commons" services="export"/>  
+			<module name="org.dom4j" />
+			<module name="org.joda.time" />
+			<module name="org.jboss.resteasy.resteasy-multipart-provider" />
+			<module name="org.jboss.resteasy.resteasy-jaxrs" />
+			<module name="org.jboss.resteasy.resteasy-jackson2-provider" />
+			<module name="org.wildfly.clustering.api" />
+			<module name="com.google.guava" />
+            <module name="org.hibernate.ogm" slot="5.0" services="export" />
+            <module name="org.hibernate.ogm.mongodb" slot="5.0" services="export" />
+            <module name="javax.json.api" />
+			<module name="org.jboss.resteasy.resteasy-jaxrs" />
+			<module name="org.bouncycastle" />
+			<module name="org.yaml.snakeyaml" />
+			<module name="com.fasterxml.jackson.core.jackson-core" />
+			<module name="com.fasterxml.jackson.core.jackson-databind" />
+			<module name="com.fasterxml.jackson.core.jackson-annotations" />
+		</dependencies>
+	</deployment>
+</jboss-deployment-structure>
