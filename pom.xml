@@ -225,7 +225,7 @@
     <dependency>
 	    <groupId>org.infinispan</groupId>
 	    <artifactId>infinispan-commons</artifactId>
-	    <version>8.1.0.Final</version>
+	    <version>14.0.25.Final</version>
 		<scope>provided</scope>
 	</dependency>
 	
